@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main {
+public class Prueba {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,7 +17,7 @@ public class main {
         System.out.println("Seleccione el tipo de libro:");
         System.out.println("1. Libro");
         System.out.println("2. Libro de Texto");
-        System.out.println("3. Libro de Texto IUAJC");
+        System.out.println("3. Libro de Texto UNIAJC");
         System.out.println("4. Novela");
         int opcion = scanner.nextInt();
         scanner.nextLine(); // Consumir la nueva línea pendiente
@@ -36,7 +36,7 @@ public class main {
             case 3:
                 System.out.println("Ingrese el curso del libro de texto:");
                 curso = scanner.nextLine();
-                System.out.println("Ingrese la facultad del libro de texto IUAJC:");
+                System.out.println("Ingrese la facultad del libro de texto UNIAJC:");
                 String facultad = scanner.nextLine();
                 LibroTextoUNIAJC libroIUAJC = new LibroTextoUNIAJC(titulo, autor, precio, curso, facultad);
                 libroIUAJC.imprimir();
